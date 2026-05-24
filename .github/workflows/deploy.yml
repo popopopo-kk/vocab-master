@@ -1,0 +1,23 @@
+# Vocab Master CI/CD — 预留
+# 当使用 GitHub Actions 自动部署时取消注释:
+#
+# name: Deploy to Vercel
+# on:
+#   push:
+#     branches: [main]
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - uses: actions/setup-node@v4
+#         with:
+#           node-version: 20
+#       - run: npm ci
+#       - run: npm run build
+#       # Vercel deployment step — requires VERCEL_TOKEN and VERCEL_PROJECT_ID secrets
+#       # - uses: amondnet/vercel-action@v25
+#       #   with:
+#       #     vercel-token: ${{ secrets.VERCEL_TOKEN }}
+#       #     vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+#       #     vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
